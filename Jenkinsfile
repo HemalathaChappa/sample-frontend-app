@@ -13,7 +13,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Starting app with PM2...'
-                bat 'pm2 restart %APP_NAME% || pm2 start serve --name %APP_NAME% -- -s public -l 4500'
+                bat 'pm2 restart %APP_NAME% || pm2 start serve --name %APP_NAME% --interpreter none -- -s public -l 4500'
             }
         }
     }
