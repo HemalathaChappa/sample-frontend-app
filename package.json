@@ -1,0 +1,8 @@
+{
+  "name": "sample-frontend-app",
+  "version": "1.0.0",
+  "description": "A minimal static frontend app for practicing Jenkins + PM2 deployment",
+  "scripts": {
+    "start": "serve -s public -l 4500"
+  }
+}
